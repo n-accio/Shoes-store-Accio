@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sản phẩm - Accio Store </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,200;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Sản phẩm</a></li>
+                    <li><a href="">Về chúng tôi</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                    <li><a href="">Tài khoản</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" alt="giohang" width="30px" height="30px">
+            <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+        
+    </div>
+    <!--------------- account page------------>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image_enter.png" alt="" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Đăng nhập</span>
+                            <span onclick="register()">Đăng ký</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Tên đăng nhập">
+                            <input type="password" placeholder="Mật khẩu">
+                            <button type="submit" class="btn">Đăng nhập</button>
+                            <a href="">Quên mật khẩu</a>
+                        </form>
+                        <form id="RegisterForm">
+                            <input type="text" placeholder="Tên đăng nhập">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Mật khẩu">
+                            <button type="submit" class="btn">Đăng ký</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>PHƯƠNG THỨC THANH TOÁN</h3>
+                    <ul>
+                        <li>Tiền mặt</li>
+                        <li>Internet banking</li>
+                        <li>Visa</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png" alt="">
+                    <p>Accio nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Hỗ trợ khách hàng</h3>
+                    <ul>
+                        <li>Chính sách đổi trả</li>
+                        <li>Hướng dẫn đặt hàng</li>
+                        <li>Phương thúc vận chuyển</li>
+                        <li>Chính sách hàng nhập khẩu</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Zalo</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Accio</p>
+        </div>
+    </div>
+    <!-- --------------js for toggle menu ---------- -->
+    <script>
+        var MenuItems = document.getElementById('MenuItems');
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px"){
+                MenuItems.style.maxHeight ="200px";
+            }
+            else{
+                MenuItems.style.maxHeight="0px";
+            }
+        }
+    </script>
+    <!------------- js for toggle Form ----------->
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegisterForm = document.getElementById("RegisterForm");
+        var Indicator = document.getElementById("Indicator");
+        function login(){
+            RegisterForm.style.transform = "translateX(300px)"
+            LoginForm.style.transform = "translateX(300px)"
+            Indicator.style.transform = "translateX(50px)"
+        }
+        function register(){
+            RegisterForm.style.transform = "translateX(0px)"
+            LoginForm.style.transform = "translateX(0px)"
+            Indicator.style.transform = "translateX(150px)"
+        }
+    </script>
+</body>
+</html>

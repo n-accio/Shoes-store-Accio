@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Accio Store| Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,200;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="products.html">Sản phẩm</a></li>
+                        <li><a href="">Về chúng tôi</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="account.html">Tài khoản</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" alt="giohang" width="30px" height="30px"></a>
+                <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="container-slide">
+                    <div class="slide">
+                        <div class="col-2">
+                            <div class="textbox">
+                                <br>
+                                <h1>Give Your Workout <br> A New Style!</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam </p>
+                                <a href="" class="btn">Xem thêm  &#8594;</a>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <img src="images/image1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide2.PNG" alt="slide2" style="width:100%">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide-3.PNG" alt="slide3" style="width:100%">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide-4.PNG" alt="slide4" style="width:100%">
+                    </div>
+                    <!-- Next and previous button -->
+                    <span class="btn-prev" onclick="plusSlides(-1)"><i class="fa fa-chevron-left"></i></span>
+                    <span class="btn-next" onclick="plusSlides(1)"><i class="fa fa-chevron-right"></i></span>             
+                </div>
+                <br>  
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <!-- Danh mục phổ biến -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-1.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sản phẩm phổ biến -->
+    <div class="small-container">
+        <h2 class="title">Sản phẩm phổ biến</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="product-details.html"><img src="images/product-1.jpg" alt=""></a>
+                <a href="product-details.html"><h4>GIÀY STAN SMITH - FW2524</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>2.400.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" alt="">
+                <h4>GIÀY SUPERSTAR BOLD - FW2547</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <p>3.200.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg" alt="">
+                <h4>GIÀY MAGMUR RUNNER - FW2518</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>2.900.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="">
+                <h4>GIÀY SUPERSTAR - FW2527</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>2.400.000₫</p>
+            </div>
+        </div>
+        <h2 class="title">Sản phẩm mới nhất</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg" alt="">
+                <h4>GIÀY STAN SMITH - FW2524</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>2.400.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.png" alt="">
+                <h4>GIÀY SUPERSTAR BOLD - FW2547</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <p>3.200.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg" alt="">
+                <h4>GIÀY MAGMUR RUNNER - FW2518</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>2.900.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg" alt="">
+                <h4>GIÀY SUPERSTAR - FW2527</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>2.400.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-9.jpg" alt="">
+                <h4>GIÀY SUPERSTAR - FW2527</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>2.400.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg" alt="">
+                <h4>GIÀY SUPERSTAR - FW2527</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>2.400.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg" alt="">
+                <h4>GIÀY SUPERSTAR - FW2527</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>2.400.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg" alt="">
+                <h4>GIÀY SUPERSTAR - FW2527</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>2.400.000₫</p>
+            </div>
+        </div>
+    </div>
+    <!-- Khuyến mãi -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive.png" alt="" class="offer-image">
+                </div>
+                <div class="col-2">
+                    <p>20% Off</p>
+                    <h1>Smart Brand 4</h1>
+                    <small>Vòng đeo tay thông minh Xiaomi Mi Band 4 Hàng Nhập Khẩu</small>
+                    <a href="" class="btn">Mua ngay  &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial  -->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. </p>
+                    
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-1.png" alt="">
+                    <h3>Sean Parker</h3>
+
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. </p>
+                    
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-2.png" alt="">
+                    <h3>Mike Smith</h3>
+
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. </p>
+                    
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-3.png" alt="">
+                    <h3>Kaity</h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- brands -->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/new_balance.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/puma.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/reebook.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/nike.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/converse.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>PHƯƠNG THỨC THANH TOÁN</h3>
+                    <ul>
+                        <li>Tiền mặt</li>
+                        <li>Internet banking</li>
+                        <li>Visa</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png" alt="">
+                    <p>Accio nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Hỗ trợ khách hàng</h3>
+                    <ul>
+                        <li>Chính sách đổi trả</li>
+                        <li>Hướng dẫn đặt hàng</li>
+                        <li>Phương thúc vận chuyển</li>
+                        <li>Chính sách hàng nhập khẩu</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Zalo</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Accio</p>
+        </div>
+    </div>
+    <!-- --------------js for toggle menu ---------- -->
+    <script>
+        var MenuItems = document.getElementById('MenuItems');
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px"){
+                MenuItems.style.maxHeight ="200px";
+            }
+            else{
+                MenuItems.style.maxHeight="0px";
+            }
+        }
+    </script>
+    <!-- ---------------js slide------------------ -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n){
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            var dots = document.getElementsByClassName("dot");
+            if(n>slides.length) slideIndex = 1;
+            if(n<1) slideIndex = slides.length;
+            for(i=0;i<slides.length;i++){
+                slides[i].style.display = "none";
+            }
+            for(i=0; i<dots.length;i++){
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "flex";
+            dots[slideIndex-1].className +=" active";
+        }
+    </script>
+</body>
+</html>
